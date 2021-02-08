@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #295939;
+    height: 100vh;
+    
+}
+
+main {
+    background-color: #e8efeb;
+    height: 97%;
+    margin: 2% 4%;
+    display: grid;
+    grid-template-rows: 20% auto 25% auto;
+    grid-template-areas: 
+            "header"
+            "figure"
+            "section"
+            "footer";
+    row-gap: 1em;
+    justify-items: center;
+    align-items: center;
+}
+
+header {
+    grid-area: header;
+    
+}
+
+figure {
+    grid-area: figure;
+}
+
+img {
+    max-width: 50em;
+    max-height: 50em;
+}
+
+section {
+    grid-area: section;
+}
+
+#footer {
+    grid-area: footer;
+}
